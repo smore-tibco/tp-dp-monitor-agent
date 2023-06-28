@@ -8,5 +8,10 @@ global:
   tibco:
     dataPlaneId: "abcd"
     subscriptionId: "sub1"
+  tp-dp-monitor-agent:
+    image:
+      registry: 664529841144.dkr.ecr.us-west-2.amazonaws.com
+      repository: /pdp/tp-dp-monitor-agent
+      tag: latest
   # .Values.global.enableLogging variable can be set to false to disable starting fluentbit side-car containers
   enableLogging: true
